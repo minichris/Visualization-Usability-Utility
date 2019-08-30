@@ -59,10 +59,21 @@ namespace TaskTimer
             stopWatch.Stop();
             byte[] TaskScreenshotPNG = GetScreenshotAsPNG();
 
-            DialogResult dialogResult = MessageBox.Show("Are you sure you believe you have finished?", "Finished?", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            DialogResult FinishedDialogResult = MessageBox.Show("Are you sure you believe you have finished?", "Finished?", MessageBoxButtons.YesNo);
+            if (FinishedDialogResult == DialogResult.Yes)
             {
                 StudyTask CurrentTask = Program.TaskList[Program.CurrentTaskIndex];
+
+                DialogResult SucessfulDialogResult = MessageBox.Show("Do you believe you have completed the task successfully?", "Task successful?", MessageBoxButtons.YesNo);
+                if (SucessfulDialogResult == DialogResult.Yes)
+                {
+                    CurrentTask.ParticipantBelievesSuccess = true;
+                }
+                else
+                {
+                    CurrentTask.ParticipantBelievesSuccess = false;
+                }
+                
                 CurrentTask.TimeSpentOnTask = stopWatch.ElapsedMilliseconds;
                 CurrentTask.ScreenshotPNG = TaskScreenshotPNG;
                 CurrentTask.Completed = true;
@@ -70,7 +81,7 @@ namespace TaskTimer
                 DataPoster.SendData(CurrentTask);
                 NextTask();
             }
-            else if (dialogResult == DialogResult.No)
+            else if (FinishedDialogResult == DialogResult.No)
             {
                 stopWatch.Start(); //start the stopwatch back up again, and continue as we were.
             }
@@ -96,10 +107,20 @@ namespace TaskTimer
                 TasksCheckedBox.SelectedIndex = Program.CurrentTaskIndex;
 
                 StudyTask CurrentTask = Program.TaskList[Program.CurrentTaskIndex];
-                TaskInstructionLabel.Text = CurrentTask.Instructions;
+                TaskInstructionLabel.Text = CreateFullInstructions(CurrentTask);
                 StartTaskButton.Enabled = true;
                 CompleteTaskButton.Enabled = false;
             }
+        }
+
+        private string CreateFullInstructions(StudyTask Task)
+        {
+            return Task.Instructions + 
+                Environment.NewLine + 
+                Environment.NewLine + 
+                "Pressing the start task button will open " + 
+                Task.TaskURL + 
+                " , which you should use to complete the task.";
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -109,6 +130,20 @@ namespace TaskTimer
             int FormWidth = 300;
             this.Size = new Size(FormWidth, workingRectangle.Height);
             this.SetDesktopLocation(workingRectangle.Width - FormWidth, 0);
+
+            MessageBox.Show(InitialInstructions(), "Hello", MessageBoxButtons.OK);
+        }
+
+        private string InitialInstructions()
+        {
+            return "Hello, and once again thank you for participation in my research. " + Environment.NewLine +
+                "This system will guide you through completing a number of tasks using two systems. " + Environment.NewLine +
+                "Before starting each task, read the task instructions at the bottom of the panel to understand what you need to do." + Environment.NewLine +
+                "Before completing each task, make sure your proof of completion is *on screen* " +
+                "because a screenshot of the entire screen will be saved, " +
+                "which is to allow me to see weither you actually completed the task or failed to complete the task" +
+                "If there is no proof of completion on screen, then I may erroneously believe you failed to complete the task." + Environment.NewLine +
+                "If at any point you wish to give up a task, just press complete task.";
         }
 
         private void StartTaskButton_MouseClick(object sender, MouseEventArgs e)

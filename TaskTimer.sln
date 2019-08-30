@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTimer", "TaskTimer.csproj", "{C3C1D75E-293C-45BA-9E9F-9C8E0A5657ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTimer", "TaskTimerClient\TaskTimer.csproj", "{C3C1D75E-293C-45BA-9E9F-9C8E0A5657ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
