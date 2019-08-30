@@ -13,5 +13,6 @@ namespace TaskTimer
         public long TimeSpentOnTask;
         public bool Completed { get; set; }
         public String TaskURL { get; set; }
+        public byte[] ScreenshotPNG { get; set; }
     }
 }
