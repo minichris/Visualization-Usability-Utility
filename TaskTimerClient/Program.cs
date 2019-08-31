@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace TaskTimer
@@ -46,6 +48,17 @@ namespace TaskTimer
 
         public static int CurrentTaskIndex = -1;
 
+        //for when saving to server goes horribly wrong
+        public static void SaveEverythingToDisk()
+        {
+            string TasksString = JsonConvert.SerializeObject(TaskList);
+            for(int i = 0; i < TaskList.Count; i++)
+            {
+                File.WriteAllBytes("task" + i + "screenshot.png", TaskList[i].ScreenshotPNG);
+            }
+            File.WriteAllText("tasks.json", TasksString);
+        }
+
         [STAThread]
         static void Main(string[] args)
         {
@@ -53,6 +66,7 @@ namespace TaskTimer
 
             Application.EnableVisualStyles();
             Application.Run(new Main());
+            SaveEverythingToDisk();
         }
     }
 }

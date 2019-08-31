@@ -14,6 +14,6 @@ namespace TaskTimer
         public bool Completed { get; set; }
         public bool ParticipantBelievesSuccess { get; set; }
         public String TaskURL { get; set; }
-        public byte[] ScreenshotPNG { get; set; }
+        public byte[] ScreenshotPNG;
     }
 }
