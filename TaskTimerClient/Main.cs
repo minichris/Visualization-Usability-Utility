@@ -62,6 +62,7 @@ namespace TaskTimer
             DialogResult FinishedDialogResult = MessageBox.Show("Are you sure you believe you have finished?", "Finished?", MessageBoxButtons.YesNo);
             if (FinishedDialogResult == DialogResult.Yes)
             {
+                CompleteTaskButton.Enabled = false;
                 StudyTask CurrentTask = Program.TaskList[Program.CurrentTaskIndex];
 
                 DialogResult SucessfulDialogResult = MessageBox.Show("Do you believe you have completed the task successfully?", "Task successful?", MessageBoxButtons.YesNo);

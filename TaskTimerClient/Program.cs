@@ -8,6 +8,8 @@ namespace TaskTimer
 {
     class Program
     {
+        public static string ParticipantIdentifier = "Participant1";
+
         public static List<StudyTask> NewSystemTaskList = new List<StudyTask>()
         {
             new StudyTask()
@@ -51,12 +53,16 @@ namespace TaskTimer
         //for when saving to server goes horribly wrong
         public static void SaveEverythingToDisk()
         {
+            if (!Directory.Exists(ParticipantIdentifier))
+            {
+                Directory.CreateDirectory(ParticipantIdentifier);
+            }
             string TasksString = JsonConvert.SerializeObject(TaskList);
             for(int i = 0; i < TaskList.Count; i++)
             {
-                File.WriteAllBytes("task" + i + "screenshot.png", TaskList[i].ScreenshotPNG);
+                File.WriteAllBytes(ParticipantIdentifier + "/task" + i + "screenshot.png", TaskList[i].ScreenshotPNG);
             }
-            File.WriteAllText("tasks.json", TasksString);
+            File.WriteAllText(ParticipantIdentifier + "/tasks.json", TasksString);
         }
 
         [STAThread]
