@@ -96,7 +96,10 @@ namespace TaskTimer
             string TasksString = JsonConvert.SerializeObject(TaskList);
             for(int i = 0; i < TaskList.Count; i++)
             {
-                File.WriteAllBytes(ParticipantIdentifier + "/task" + i + "screenshot.png", TaskList[i].ScreenshotPNG);
+                if (TaskList[i].ScreenshotPNG != null)
+                {
+                    File.WriteAllBytes(ParticipantIdentifier + "/task" + i + "screenshot.png", TaskList[i].ScreenshotPNG);
+                }
             }
             File.WriteAllText(ParticipantIdentifier + "/tasks.json", TasksString);
         }

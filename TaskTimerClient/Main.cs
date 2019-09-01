@@ -80,6 +80,7 @@ namespace TaskTimer
                 CurrentTask.Completed = true;
 
                 DataPoster.SendData(CurrentTask);
+                Program.SaveEverythingToDisk();
                 NextTask();
             }
             else if (FinishedDialogResult == DialogResult.No)
