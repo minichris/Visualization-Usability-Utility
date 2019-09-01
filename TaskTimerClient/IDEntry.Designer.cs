@@ -40,6 +40,7 @@
             this.IDTextBox.Name = "IDTextBox";
             this.IDTextBox.Size = new System.Drawing.Size(346, 20);
             this.IDTextBox.TabIndex = 0;
+            this.IDTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IDTextBox_KeyDown);
             // 
             // AcceptButton
             // 

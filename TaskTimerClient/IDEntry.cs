@@ -25,5 +25,11 @@ namespace TaskTimer
                 this.Close();
             }
         }
+
+        private void IDTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                AcceptButton_Click(sender, e);
+        }
     }
 }
