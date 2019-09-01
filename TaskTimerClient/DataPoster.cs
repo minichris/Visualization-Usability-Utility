@@ -7,7 +7,7 @@ namespace TaskTimer
     {
         public static IRestResponse SendData(StudyTask Task)
         {
-            var client = new RestClient("http://localhost:3000/");
+            var client = new RestClient("http://82.16.4.246:25564/");
             var request = new RestRequest("tasks", Method.POST);
             request.RequestFormat = DataFormat.Json;
             request.AddParameter("Title", Task.Title);
