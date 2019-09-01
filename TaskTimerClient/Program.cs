@@ -10,6 +10,42 @@ namespace TaskTimer
     {
         public static string ParticipantIdentifier = "Participant1";
 
+        public static List<StudyTask> OldSystemTaskList = new List<StudyTask>()
+        {
+            new StudyTask()
+            {
+                Title = "Giving a brief description of a Pattern",
+                Instructions = "Find a brief description of the Pattern “Enforced Player Anonymity”. " +
+                "When you have the description highlighted, press the complete task button.",
+                TaskURL = "http://virt10.itu.chalmers.se/index.php/Main_Page"
+            },
+            new StudyTask()
+            {
+                Title = "Finding a Pattern from a brief description",
+                Instructions = "Find the pattern that meets the following description " +
+                "“Waiting time players have to experience during game sessions.”" +
+                "When you have found this pattern's page and are viewing it, press the complete task button.",
+                TaskURL = "http://virt10.itu.chalmers.se/index.php/Main_Page"
+            },
+            new StudyTask()
+            {
+                Title = "Finding Patterns from a category",
+                Instructions = "Find 5 patterns from the category “Gameplay Arc Patterns”" +
+                "Open notepad.exe from the start menu and write down the patterns. " +
+                "Make sure notepad is on the screen when you press the complete task button.",
+                TaskURL = "http://virt10.itu.chalmers.se/index.php/Main_Page"
+            },
+            new StudyTask()
+            {
+                Title = "Finding examples of games which make use of a specific pattern",
+                Instructions = "Find the names of 5 games which make use of the “Abilities” pattern. " +
+                "Don’t include categories in your response." +
+                "Open notepad.exe from the start menu and write down the games. " +
+                "Make sure notepad is on the screen when you press the complete task button.",
+                TaskURL = "http://virt10.itu.chalmers.se/index.php/Main_Page"
+            }
+        };
+
         public static List<StudyTask> NewSystemTaskList = new List<StudyTask>()
         {
             new StudyTask()
@@ -69,8 +105,10 @@ namespace TaskTimer
         static void Main(string[] args)
         {
             TaskList.AddRange(NewSystemTaskList);
+            TaskList.AddRange(OldSystemTaskList);
 
             Application.EnableVisualStyles();
+            Application.Run(new IDEntry());
             Application.Run(new Main());
             SaveEverythingToDisk();
         }

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C3C1D75E-293C-45BA-9E9F-9C8E0A5657ED}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>TaskTimer</RootNamespace>
     <AssemblyName>TaskTimer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -58,6 +58,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataPoster.cs" />
+    <Compile Include="IDEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDEntry.Designer.cs">
+      <DependentUpon>IDEntry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="IDEntry.resx">
+      <DependentUpon>IDEntry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
