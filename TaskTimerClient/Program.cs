@@ -53,7 +53,7 @@ namespace TaskTimer
                 Title = "Giving a brief description of a Pattern",
                 Instructions = "Find a brief description of the Pattern “Artifact-Location Proximity”. " +
                 "When you have the description highlighted, press the complete task button.",
-                TaskURL = "http://topbanter.net/vgtropes2"
+                TaskURL = "http://107.170.92.50"
             },
             new StudyTask()
             {
@@ -61,7 +61,7 @@ namespace TaskTimer
                 Instructions = "Find the pattern that meets the following description " +
                 "“Being in control over who can move within an area in the game world or having access to actions linked to locations in the game world.”" +
                 "When you have found this pattern's page and are viewing it, press the complete task button.",
-                TaskURL = "http://topbanter.net/vgtropes2"
+                TaskURL = "http://107.170.92.50"
             },
             new StudyTask()
             {
@@ -69,7 +69,7 @@ namespace TaskTimer
                 Instructions = "Find 5 patterns from the category “Interface Patterns”" +
                 "Open notepad.exe from the start menu and write down the patterns. " +
                 "Make sure notepad is on the screen when you press the complete task button.",
-                TaskURL = "http://topbanter.net/vgtropes2"
+                TaskURL = "http://107.170.92.50"
             },
             new StudyTask()
             {
@@ -78,7 +78,7 @@ namespace TaskTimer
                 "Don’t include categories in your response." + 
                 "Open notepad.exe from the start menu and write down the games. " +
                 "Make sure notepad is on the screen when you press the complete task button.",
-                TaskURL = "http://topbanter.net/vgtropes2"
+                TaskURL = "http://107.170.92.50"
             }
         };
 
