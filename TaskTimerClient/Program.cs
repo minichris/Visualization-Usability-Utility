@@ -12,6 +12,9 @@ namespace TaskTimer
     {
         public static string ParticipantIdentifier = "Participant1";
 
+        public static string VGTropesURL = ConfigurationManager.AppSettings["VGTropesURL"];
+        public static string GDPWikiURL = ConfigurationManager.AppSettings["GDPWikiURL"];
+
         public static List<StudyTask> OldSystemTaskList = new List<StudyTask>()
         {
             new StudyTask()
@@ -19,7 +22,7 @@ namespace TaskTimer
                 Title = "Giving a brief description of a Pattern",
                 Instructions = "Find a brief description of the Pattern “Enforced Player Anonymity”. " +
                 "When you have the description highlighted, press the complete task button.",
-                TaskURL = "http://virt10.itu.chalmers.se/index.php/Main_Page"
+                TaskURL = Program.GDPWikiURL
             },
             new StudyTask()
             {
@@ -27,7 +30,7 @@ namespace TaskTimer
                 Instructions = "Find the pattern that meets the following description " +
                 "“Waiting time players have to experience during game sessions.”" +
                 "When you have found this pattern's page and are viewing it, press the complete task button.",
-                TaskURL = "http://virt10.itu.chalmers.se/index.php/Main_Page"
+                TaskURL = Program.GDPWikiURL
             },
             new StudyTask()
             {
@@ -35,7 +38,7 @@ namespace TaskTimer
                 Instructions = "Find 5 patterns from the category “Gameplay Arc Patterns”" +
                 "Open notepad.exe from the start menu and write down the patterns. " +
                 "Make sure notepad is on the screen when you press the complete task button.",
-                TaskURL = "http://virt10.itu.chalmers.se/index.php/Main_Page"
+                TaskURL = Program.GDPWikiURL
             },
             new StudyTask()
             {
@@ -44,7 +47,14 @@ namespace TaskTimer
                 "Don’t include categories in your response." +
                 "Open notepad.exe from the start menu and write down the games. " +
                 "Make sure notepad is on the screen when you press the complete task button.",
-                TaskURL = "http://virt10.itu.chalmers.se/index.php/Main_Page"
+                TaskURL = Program.GDPWikiURL
+            },
+            new StudyTask()
+            {
+                Title = "Post-Wiki System Use Questionnaire",
+                Instructions = "Fill in the following questionnaire. For the question 'Which of the systems did you just use?', select 'Gameplay Design Patterns Wiki'.",
+                TaskURL = "https://unioflincoln.eu.qualtrics.com/jfe/form/SV_aUXwBVYTaC0wklL",
+                ShouldShowFailedQuestion = false
             }
         };
 
@@ -55,7 +65,7 @@ namespace TaskTimer
                 Title = "Giving a brief description of a Pattern",
                 Instructions = "Find a brief description of the Pattern “Artifact-Location Proximity”. " +
                 "When you have the description highlighted, press the complete task button.",
-                TaskURL = "http://107.170.92.50"
+                TaskURL = Program.VGTropesURL
             },
             new StudyTask()
             {
@@ -63,7 +73,7 @@ namespace TaskTimer
                 Instructions = "Find the pattern that meets the following description " +
                 "“Being in control over who can move within an area in the game world or having access to actions linked to locations in the game world.”" +
                 "When you have found this pattern's page and are viewing it, press the complete task button.",
-                TaskURL = "http://107.170.92.50"
+                TaskURL = Program.VGTropesURL
             },
             new StudyTask()
             {
@@ -71,7 +81,7 @@ namespace TaskTimer
                 Instructions = "Find 5 patterns from the category “Interface Patterns”" +
                 "Open notepad.exe from the start menu and write down the patterns. " +
                 "Make sure notepad is on the screen when you press the complete task button.",
-                TaskURL = "http://107.170.92.50"
+                TaskURL = Program.VGTropesURL
             },
             new StudyTask()
             {
@@ -80,11 +90,18 @@ namespace TaskTimer
                 "Don’t include categories in your response." + 
                 "Open notepad.exe from the start menu and write down the games. " +
                 "Make sure notepad is on the screen when you press the complete task button.",
-                TaskURL = "http://107.170.92.50"
+                TaskURL = Program.VGTropesURL
+            },
+            new StudyTask()
+            {
+                Title = "Post-VGTropes Use Questionnaire",
+                Instructions = "Fill in the following questionnaire. For the question 'Which of the systems did you just use?', select 'VGTropes'.",
+                TaskURL = "https://unioflincoln.eu.qualtrics.com/jfe/form/SV_aUXwBVYTaC0wklL",
+                ShouldShowFailedQuestion = false
             }
         };
 
-        public static String RemoteServerLocation = ConfigurationManager.AppSettings["RemoteServer"];
+    public static String RemoteServerLocation = ConfigurationManager.AppSettings["RemoteServer"];
 
     public static List<StudyTask> TaskList = new List<StudyTask>();
 

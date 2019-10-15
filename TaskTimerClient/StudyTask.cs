@@ -11,6 +11,7 @@ namespace TaskTimer
         public String Title { get; set; }
         public String Instructions { get; set; }
         public long TimeSpentOnTask;
+        public bool ShouldShowFailedQuestion { get; set; } = true;
         public bool Completed { get; set; }
         public bool ParticipantBelievesSuccess { get; set; }
         public String TaskURL { get; set; }

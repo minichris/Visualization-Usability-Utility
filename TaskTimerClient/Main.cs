@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System;
-using System.Runtime.InteropServices;
-using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 
@@ -64,17 +53,22 @@ namespace TaskTimer
             {
                 CompleteTaskButton.Enabled = false;
                 StudyTask CurrentTask = Program.TaskList[Program.CurrentTaskIndex];
-
-                DialogResult SucessfulDialogResult = MessageBox.Show("Do you believe you have completed the task successfully?", "Task successful?", MessageBoxButtons.YesNo);
-                if (SucessfulDialogResult == DialogResult.Yes)
+                if (CurrentTask.ShouldShowFailedQuestion)
                 {
-                    CurrentTask.ParticipantBelievesSuccess = true;
+                    DialogResult SucessfulDialogResult = MessageBox.Show("Do you believe you have completed the task successfully?", "Task successful?", MessageBoxButtons.YesNo);
+                    if (SucessfulDialogResult == DialogResult.Yes)
+                    {
+                        CurrentTask.ParticipantBelievesSuccess = true;
+                    }
+                    else
+                    {
+                        CurrentTask.ParticipantBelievesSuccess = false;
+                    }
                 }
                 else
                 {
-                    CurrentTask.ParticipantBelievesSuccess = false;
+                    CurrentTask.ParticipantBelievesSuccess = true;
                 }
-                
                 CurrentTask.TimeSpentOnTask = stopWatch.ElapsedMilliseconds;
                 CurrentTask.ScreenshotPNG = TaskScreenshotPNG;
                 CurrentTask.Completed = true;
