@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Configuration;
 using System.IO;
 using System.Windows.Forms;
 
@@ -82,7 +84,9 @@ namespace TaskTimer
             }
         };
 
-        public static List<StudyTask> TaskList = new List<StudyTask>();
+        public static String RemoteServerLocation = ConfigurationManager.AppSettings["RemoteServer"];
+
+    public static List<StudyTask> TaskList = new List<StudyTask>();
 
         public static int CurrentTaskIndex = -1;
 
