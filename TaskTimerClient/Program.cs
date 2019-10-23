@@ -35,7 +35,7 @@ namespace TaskTimer
             new StudyTask()
             {
                 Title = "Finding Patterns from a category",
-                Instructions = "Find 5 patterns from the category “Gameplay Arc Patterns” " +
+                Instructions = "Find 5 patterns from the category “Gameplay Arc Patterns”. " +
                 "Write, or copy and paste the patterns you find into the Task Answer Box below. " +
                 "When you have 5 patterns in the box, press the task complete button.",
                 TaskURL = Program.GDPWikiURL
@@ -78,7 +78,7 @@ namespace TaskTimer
             new StudyTask()
             {
                 Title = "Finding Patterns from a category",
-                Instructions = "Find 5 patterns from the category “Interface Patterns” " +
+                Instructions = "Find 5 patterns from the category “Interface Patterns”. " +
                 "Write, or copy and paste the patterns you find into the Task Answer Box below. " +
                 "When you have 5 patterns in the box, press the task complete button.",
                 TaskURL = Program.VGTropesURL
