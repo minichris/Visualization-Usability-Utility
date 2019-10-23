@@ -26,7 +26,10 @@ namespace TaskTimer
             TaskAnswerRichTextBox.Enabled = true;
             TaskAnswerRichTextBox.Text = null;
             CompleteTaskButton.Enabled = true;
+            
             StudyTask CurrentTask = Program.TaskList[Program.CurrentTaskIndex];
+            GiveUpButton.Enabled = CurrentTask.ShouldShowFailedQuestion;
+
             Browser = Process.Start(CurrentTask.TaskURL); //open web browser
             //SetBrowserSize(Browser); //no easy way to set browser size right now, ignoring
             stopWatch = new Stopwatch();
@@ -45,19 +48,29 @@ namespace TaskTimer
             return pngBytes;
         }
 
-        private void FinishTask()
+        private void FinishTask(bool GivingUp = false)
         {
             stopWatch.Stop();
             byte[] TaskScreenshotPNG = GetScreenshotAsPNG();
+            DialogResult FinishedDialogResult;
 
-            DialogResult FinishedDialogResult = MessageBox.Show("Are you sure you believe you have finished?", "Finished?", MessageBoxButtons.YesNo);
+            if (!GivingUp)
+            {
+                FinishedDialogResult = MessageBox.Show("Are you sure you believe you have finished?", "Finished?", MessageBoxButtons.YesNo);
+            }
+            else
+            {
+                FinishedDialogResult = MessageBox.Show("Are you sure you want to give up on this task?", "Finished?", MessageBoxButtons.YesNo);
+            }
+            
             if (FinishedDialogResult == DialogResult.Yes)
             {
                 CompleteTaskButton.Enabled = false;
+                GiveUpButton.Enabled = false;
                 StudyTask CurrentTask = Program.TaskList[Program.CurrentTaskIndex];
-                if (CurrentTask.ShouldShowFailedQuestion)
+                if (CurrentTask.ShouldShowFailedQuestion && !GivingUp)
                 {
-                    DialogResult SucessfulDialogResult = MessageBox.Show("Do you believe you have completed the task successfully?", "Task successful?", MessageBoxButtons.YesNo);
+                    DialogResult SucessfulDialogResult = MessageBox.Show("Do you believe you have finished the task successfully?", "Task successful?", MessageBoxButtons.YesNo);
                     if (SucessfulDialogResult == DialogResult.Yes)
                     {
                         CurrentTask.ParticipantBelievesSuccess = true;
@@ -69,7 +82,7 @@ namespace TaskTimer
                 }
                 else
                 {
-                    CurrentTask.ParticipantBelievesSuccess = true;
+                    CurrentTask.ParticipantBelievesSuccess = GivingUp;
                 }
                 CurrentTask.TimeSpentOnTask = stopWatch.ElapsedMilliseconds;
                 CurrentTask.ScreenshotPNG = TaskScreenshotPNG;
@@ -110,6 +123,7 @@ namespace TaskTimer
                 StartTaskButton.Enabled = true;
                 TaskAnswerRichTextBox.Enabled = false;
                 CompleteTaskButton.Enabled = false;
+                GiveUpButton.Enabled = false;
             }
         }
 
@@ -153,7 +167,12 @@ namespace TaskTimer
 
         private void CompleteTaskButton_MouseClick(object sender, MouseEventArgs e)
         {
-            FinishTask();
+            FinishTask(false);
+        }
+
+        private void GiveUpButton_Click(object sender, EventArgs e)
+        {
+            FinishTask(true);
         }
     }
 }

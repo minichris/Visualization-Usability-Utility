@@ -39,6 +39,7 @@
             this.TitleLabel = new System.Windows.Forms.Label();
             this.TaskAnswerRichTextBox = new System.Windows.Forms.RichTextBox();
             this.TaskAnswerInput = new System.Windows.Forms.GroupBox();
+            this.GiveUpButton = new System.Windows.Forms.Button();
             this.TaskInstructionGroupbox.SuspendLayout();
             this.TasksGroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,7 +76,7 @@
             this.TasksCheckedBox.FormattingEnabled = true;
             this.TasksCheckedBox.Location = new System.Drawing.Point(6, 23);
             this.TasksCheckedBox.Name = "TasksCheckedBox";
-            this.TasksCheckedBox.Size = new System.Drawing.Size(264, 229);
+            this.TasksCheckedBox.Size = new System.Drawing.Size(264, 199);
             this.TasksCheckedBox.TabIndex = 1;
             // 
             // TasksGroupbox
@@ -85,16 +86,16 @@
             this.TasksGroupbox.Controls.Add(this.TasksCheckedBox);
             this.TasksGroupbox.Location = new System.Drawing.Point(12, 94);
             this.TasksGroupbox.Name = "TasksGroupbox";
-            this.TasksGroupbox.Size = new System.Drawing.Size(276, 257);
+            this.TasksGroupbox.Size = new System.Drawing.Size(276, 233);
             this.TasksGroupbox.TabIndex = 2;
             this.TasksGroupbox.TabStop = false;
             this.TasksGroupbox.Text = "Tasks";
             // 
             // StartTaskButton
             // 
-            this.StartTaskButton.Location = new System.Drawing.Point(18, 357);
+            this.StartTaskButton.Location = new System.Drawing.Point(12, 333);
             this.StartTaskButton.Name = "StartTaskButton";
-            this.StartTaskButton.Size = new System.Drawing.Size(121, 23);
+            this.StartTaskButton.Size = new System.Drawing.Size(130, 23);
             this.StartTaskButton.TabIndex = 3;
             this.StartTaskButton.Text = "Start Task";
             this.StartTaskButton.UseVisualStyleBackColor = true;
@@ -103,7 +104,7 @@
             // CompleteTaskButton
             // 
             this.CompleteTaskButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CompleteTaskButton.Location = new System.Drawing.Point(154, 357);
+            this.CompleteTaskButton.Location = new System.Drawing.Point(154, 333);
             this.CompleteTaskButton.Name = "CompleteTaskButton";
             this.CompleteTaskButton.Size = new System.Drawing.Size(128, 23);
             this.CompleteTaskButton.TabIndex = 4;
@@ -156,12 +157,24 @@
             this.TaskAnswerInput.TabStop = false;
             this.TaskAnswerInput.Text = "Task Answer Box";
             // 
+            // GiveUpButton
+            // 
+            this.GiveUpButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.GiveUpButton.Location = new System.Drawing.Point(154, 362);
+            this.GiveUpButton.Name = "GiveUpButton";
+            this.GiveUpButton.Size = new System.Drawing.Size(128, 23);
+            this.GiveUpButton.TabIndex = 9;
+            this.GiveUpButton.Text = "Give up on Task";
+            this.GiveUpButton.UseVisualStyleBackColor = true;
+            this.GiveUpButton.Click += new System.EventHandler(this.GiveUpButton_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 730);
             this.ControlBox = false;
+            this.Controls.Add(this.GiveUpButton);
             this.Controls.Add(this.TaskAnswerInput);
             this.Controls.Add(this.TitleLabel);
             this.Controls.Add(this.pictureBox1);
@@ -196,5 +209,6 @@
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.RichTextBox TaskAnswerRichTextBox;
         private System.Windows.Forms.GroupBox TaskAnswerInput;
+        private System.Windows.Forms.Button GiveUpButton;
     }
 }
