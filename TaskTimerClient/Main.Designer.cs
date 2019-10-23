@@ -37,9 +37,12 @@
             this.CompleteTaskButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TitleLabel = new System.Windows.Forms.Label();
+            this.TaskAnswerRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.TaskAnswerInput = new System.Windows.Forms.GroupBox();
             this.TaskInstructionGroupbox.SuspendLayout();
             this.TasksGroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.TaskAnswerInput.SuspendLayout();
             this.SuspendLayout();
             // 
             // TaskInstructionGroupbox
@@ -131,12 +134,35 @@
             this.TitleLabel.Text = "Task Giver";
             this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TaskAnswerRichTextBox
+            // 
+            this.TaskAnswerRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TaskAnswerRichTextBox.Location = new System.Drawing.Point(6, 19);
+            this.TaskAnswerRichTextBox.Name = "TaskAnswerRichTextBox";
+            this.TaskAnswerRichTextBox.Size = new System.Drawing.Size(264, 145);
+            this.TaskAnswerRichTextBox.TabIndex = 7;
+            this.TaskAnswerRichTextBox.Text = "";
+            // 
+            // TaskAnswerInput
+            // 
+            this.TaskAnswerInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TaskAnswerInput.Controls.Add(this.TaskAnswerRichTextBox);
+            this.TaskAnswerInput.Location = new System.Drawing.Point(12, 548);
+            this.TaskAnswerInput.Name = "TaskAnswerInput";
+            this.TaskAnswerInput.Size = new System.Drawing.Size(276, 170);
+            this.TaskAnswerInput.TabIndex = 8;
+            this.TaskAnswerInput.TabStop = false;
+            this.TaskAnswerInput.Text = "Task Answer Box";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 730);
             this.ControlBox = false;
+            this.Controls.Add(this.TaskAnswerInput);
             this.Controls.Add(this.TitleLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CompleteTaskButton);
@@ -147,11 +173,12 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";
-            this.Text = "Main";
+            this.Text = "Task Giver";
             this.Load += new System.EventHandler(this.Main_Load);
             this.TaskInstructionGroupbox.ResumeLayout(false);
             this.TasksGroupbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.TaskAnswerInput.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +194,7 @@
         private System.Windows.Forms.Button CompleteTaskButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label TitleLabel;
+        private System.Windows.Forms.RichTextBox TaskAnswerRichTextBox;
+        private System.Windows.Forms.GroupBox TaskAnswerInput;
     }
 }

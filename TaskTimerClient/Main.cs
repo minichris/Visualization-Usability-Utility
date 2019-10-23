@@ -23,6 +23,8 @@ namespace TaskTimer
         private void StartTask()
         {
             StartTaskButton.Enabled = false;
+            TaskAnswerRichTextBox.Enabled = true;
+            TaskAnswerRichTextBox.Text = null;
             CompleteTaskButton.Enabled = true;
             StudyTask CurrentTask = Program.TaskList[Program.CurrentTaskIndex];
             Browser = Process.Start(CurrentTask.TaskURL); //open web browser
@@ -71,10 +73,11 @@ namespace TaskTimer
                 }
                 CurrentTask.TimeSpentOnTask = stopWatch.ElapsedMilliseconds;
                 CurrentTask.ScreenshotPNG = TaskScreenshotPNG;
+                CurrentTask.Answer = TaskAnswerRichTextBox.Text;
                 CurrentTask.Completed = true;
-
                 DataPoster.SendData(CurrentTask);
                 Program.SaveEverythingToDisk();
+                TaskAnswerRichTextBox.Text = null;
                 NextTask();
             }
             else if (FinishedDialogResult == DialogResult.No)
@@ -105,6 +108,7 @@ namespace TaskTimer
                 StudyTask CurrentTask = Program.TaskList[Program.CurrentTaskIndex];
                 TaskInstructionLabel.Text = CreateFullInstructions(CurrentTask);
                 StartTaskButton.Enabled = true;
+                TaskAnswerRichTextBox.Enabled = false;
                 CompleteTaskButton.Enabled = false;
             }
         }

@@ -28,25 +28,25 @@ namespace TaskTimer
             {
                 Title = "Finding a Pattern from a brief description",
                 Instructions = "Find the pattern that meets the following description " +
-                "“Waiting time players have to experience during game sessions.”" +
+                "“Waiting time players have to experience during game sessions.” " +
                 "When you have found this pattern's page and are viewing it, press the complete task button.",
                 TaskURL = Program.GDPWikiURL
             },
             new StudyTask()
             {
                 Title = "Finding Patterns from a category",
-                Instructions = "Find 5 patterns from the category “Gameplay Arc Patterns”" +
-                "Open notepad.exe from the start menu and write down the patterns. " +
-                "Make sure notepad is on the screen when you press the complete task button.",
+                Instructions = "Find 5 patterns from the category “Gameplay Arc Patterns” " +
+                "Write, or copy and paste the patterns you find into the Task Answer Box below. " +
+                "When you have 5 patterns in the box, press the task complete button.",
                 TaskURL = Program.GDPWikiURL
             },
             new StudyTask()
             {
                 Title = "Finding examples of games which make use of a specific pattern",
                 Instructions = "Find the names of 5 games which make use of the “Abilities” pattern. " +
-                "Don’t include categories in your response." +
-                "Open notepad.exe from the start menu and write down the games. " +
-                "Make sure notepad is on the screen when you press the complete task button.",
+                "Don’t include categories in your response. " +
+                "Write, or copy and paste the games you find into the Task Answer Box below. " +
+                "When you have 5 games in the box, press the task complete button.",
                 TaskURL = Program.GDPWikiURL
             },
             new StudyTask()
@@ -71,25 +71,25 @@ namespace TaskTimer
             {
                 Title = "Finding a Pattern from a brief description",
                 Instructions = "Find the pattern that meets the following description " +
-                "“Being in control over who can move within an area in the game world or having access to actions linked to locations in the game world.”" +
+                "“Being in control over who can move within an area in the game world or having access to actions linked to locations in the game world.” " +
                 "When you have found this pattern's page and are viewing it, press the complete task button.",
                 TaskURL = Program.VGTropesURL
             },
             new StudyTask()
             {
                 Title = "Finding Patterns from a category",
-                Instructions = "Find 5 patterns from the category “Interface Patterns”" +
-                "Open notepad.exe from the start menu and write down the patterns. " +
-                "Make sure notepad is on the screen when you press the complete task button.",
+                Instructions = "Find 5 patterns from the category “Interface Patterns” " +
+                "Write, or copy and paste the patterns you find into the Task Answer Box below. " +
+                "When you have 5 patterns in the box, press the task complete button.",
                 TaskURL = Program.VGTropesURL
             },
             new StudyTask()
             {
                 Title = "Finding examples of games which make use of a specific pattern",
                 Instructions = "Find the names of 5 games which make use of the “Critical Hits” pattern. " +
-                "Don’t include categories in your response." + 
-                "Open notepad.exe from the start menu and write down the games. " +
-                "Make sure notepad is on the screen when you press the complete task button.",
+                "Don’t include categories in your response. " +
+                "Write, or copy and paste the games you find into the Task Answer Box below. " +
+                "When you have 5 games in the box, press the task complete button.",
                 TaskURL = Program.VGTropesURL
             },
             new StudyTask()
