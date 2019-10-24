@@ -14,6 +14,7 @@ namespace TaskTimer
             request.AddParameter("System", Task.TaskURL);
             request.AddParameter("Answer", Task.Answer);
             request.AddParameter("TimeSpent", Task.TimeSpentOnTask);
+            request.AddParameter("Timestamp", Task.Timestamp);
             request.AddParameter("BelievesSuccess", Task.ParticipantBelievesSuccess);
             request.AddParameter("Screenshot", System.Convert.ToBase64String(Task.ScreenshotPNG));
 

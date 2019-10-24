@@ -16,6 +16,7 @@ namespace TaskTimer
         public bool ParticipantBelievesSuccess { get; set; }
         public String TaskURL { get; set; }
         public String Answer { get; set; }
+        public Int32 Timestamp { get; set; }
         public byte[] ScreenshotPNG;
         public String Participant { get; set; } = Program.ParticipantIdentifier;
     }

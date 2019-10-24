@@ -99,6 +99,7 @@ namespace TaskTimer
                 CurrentTask.ScreenshotPNG = TaskScreenshotPNG;
                 CurrentTask.Answer = TaskAnswerRichTextBox.Text;
                 CurrentTask.Completed = true;
+                CurrentTask.Timestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
                 DataPoster.SendData(CurrentTask);
                 Program.SaveEverythingToDisk();
                 TaskAnswerRichTextBox.Text = null;
