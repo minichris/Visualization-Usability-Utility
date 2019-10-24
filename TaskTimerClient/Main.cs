@@ -30,7 +30,18 @@ namespace TaskTimer
             StudyTask CurrentTask = Program.TaskList[Program.CurrentTaskIndex];
             GiveUpButton.Enabled = CurrentTask.ShouldShowFailedQuestion;
 
-            Browser = Process.Start(CurrentTask.TaskURL); //open web browser
+
+            String ChromePath = Microsoft.Win32.Registry.GetValue(@"HKEY_CLASSES_ROOT\ChromeHTML\shell\open\command", null, null) as string;
+            if (ChromePath != null)
+            {
+                var split = ChromePath.Split('\"');
+                ChromePath = split.Length >= 2 ? split[1] : null;
+            }
+
+            ProcessStartInfo ChromeProcess = new ProcessStartInfo();
+            ChromeProcess.FileName = ChromePath;
+            ChromeProcess.Arguments = "--incognito \"" + CurrentTask.TaskURL + "\"";
+            Browser = Process.Start(ChromeProcess); //open web browser
             //SetBrowserSize(Browser); //no easy way to set browser size right now, ignoring
             stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -91,6 +102,17 @@ namespace TaskTimer
                 DataPoster.SendData(CurrentTask);
                 Program.SaveEverythingToDisk();
                 TaskAnswerRichTextBox.Text = null;
+                foreach (Process process in Process.GetProcesses())
+                {
+                    if (process.MainWindowTitle.Contains("VGTropes") || process.MainWindowTitle.Contains("gdp3") || process.ProcessName.Contains("chrome"))
+                    {
+                        try
+                        {
+                            process.Kill();
+                        }
+                        catch { }
+                    }
+                }
                 NextTask();
             }
             else if (FinishedDialogResult == DialogResult.No)
