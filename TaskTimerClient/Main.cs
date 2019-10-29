@@ -177,10 +177,8 @@ namespace TaskTimer
                 "This system will guide you through completing a number of tasks using two systems. " + Environment.NewLine +
                 "Before starting each task, read the task instructions at the bottom of the panel to understand what you need to do." + Environment.NewLine +
                 "Before completing each task, make sure your proof of completion is *on screen* " +
-                "because a screenshot of the entire screen will be saved, " +
-                "which is to allow me to see weither you actually completed the task or failed to complete the task" +
-                "If there is no proof of completion on screen, then I may erroneously believe you failed to complete the task." + Environment.NewLine +
-                "If at any point you wish to give up a task, just press complete task.";
+                "because a screenshot of the entire screen will be saved, to show me what you had open or selected at the time." + Environment.NewLine +
+                "If at any point you wish to give up a task, just press the \"give up on task\" button.";
         }
 
         private void StartTaskButton_MouseClick(object sender, MouseEventArgs e)
