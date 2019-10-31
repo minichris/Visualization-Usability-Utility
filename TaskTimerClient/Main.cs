@@ -134,7 +134,7 @@ namespace TaskTimer
             {
 
                 TasksCheckedBox.DataSource = Program.TaskList;
-                TasksCheckedBox.DisplayMember = "Title";
+                TasksCheckedBox.DisplayMember = "DisplayTitle";
                 for (int i = 0; i < Program.TaskList.Count; i++)
                 {
                     TasksCheckedBox.SetItemChecked(i, Program.TaskList[i].Completed);

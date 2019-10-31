@@ -19,5 +19,6 @@ namespace TaskTimer
         public Int32 Timestamp { get; set; }
         public byte[] ScreenshotPNG;
         public String Participant { get; set; } = Program.ParticipantIdentifier;
+        public string DisplayTitle { get; internal set; }
     }
 }
