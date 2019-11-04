@@ -40,7 +40,7 @@ namespace TaskTimer
 
             ProcessStartInfo ChromeProcess = new ProcessStartInfo();
             ChromeProcess.FileName = ChromePath;
-            ChromeProcess.Arguments = "--incognito \"" + CurrentTask.TaskURL + "\"";
+            ChromeProcess.Arguments = "--incognito \"" + CurrentTask.TaskURL.Replace("*", Program.ParticipantIdentifier) + "\"";
             Browser = Process.Start(ChromeProcess); //open web browser
             //SetBrowserSize(Browser); //no easy way to set browser size right now, ignoring
             stopWatch = new Stopwatch();
