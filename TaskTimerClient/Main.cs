@@ -183,7 +183,14 @@ namespace TaskTimer
 
         private void StartTaskButton_MouseClick(object sender, MouseEventArgs e)
         {
-            StartTask();
+            switch(MessageBox.Show("Do you understand the task?", "Understand the task?", MessageBoxButtons.YesNo))
+            {
+                case DialogResult.Yes:
+                    StartTask();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void CompleteTaskButton_MouseClick(object sender, MouseEventArgs e)
