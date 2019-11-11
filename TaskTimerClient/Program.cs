@@ -117,7 +117,15 @@ namespace TaskTimer
             }
         };
 
-    public static String RemoteServerLocation = ConfigurationManager.AppSettings["RemoteServer"];
+        public static StudyTask PreQuestionnaire = new StudyTask() {
+            Title = "Pre-Study Questionnaire",
+            DisplayTitle = "Task 0",
+            Instructions = "Fill in the following questionnaire about yourself.",
+            TaskURL = "https://unioflincoln.eu.qualtrics.com/jfe/form/SV_8JrKQnFk0jktjU1",
+            ShouldShowFailedQuestion = false
+        };
+
+        public static String RemoteServerLocation = ConfigurationManager.AppSettings["RemoteServer"];
 
     public static List<StudyTask> TaskList = new List<StudyTask>();
 
@@ -147,11 +155,13 @@ namespace TaskTimer
             Random rnd = new Random();
             if (Program.ReverseMode != "true")
             {
+                TaskList.Add(PreQuestionnaire);
                 TaskList.AddRange(OldSystemTaskList);
                 TaskList.AddRange(NewSystemTaskList);
             }
             else
             {
+                TaskList.Add(PreQuestionnaire);
                 TaskList.AddRange(NewSystemTaskList);
                 TaskList.AddRange(OldSystemTaskList);
             }
