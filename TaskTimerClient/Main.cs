@@ -105,7 +105,7 @@ namespace TaskTimer
                 TaskAnswerRichTextBox.Text = null;
                 foreach (Process process in Process.GetProcesses())
                 {
-                    if (process.MainWindowTitle.Contains("VGTropes") || process.MainWindowTitle.Contains("gdp3") || process.ProcessName.Contains("chrome"))
+                    if (process.MainWindowTitle.Contains("GDPVis") || process.MainWindowTitle.Contains("gdp3") || process.ProcessName.Contains("chrome"))
                     {
                         try
                         {

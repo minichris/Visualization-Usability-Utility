@@ -12,7 +12,7 @@ namespace TaskTimer
     {
         public static string ParticipantIdentifier = "Participant1";
 
-        public static string VGTropesURL = ConfigurationManager.AppSettings["VGTropesURL"];
+        public static string GDPVisURL = ConfigurationManager.AppSettings["GDPVisURL"];
         public static string GDPWikiURL = ConfigurationManager.AppSettings["GDPWikiURL"];
         public static string ReverseMode = ConfigurationManager.AppSettings["ReverseMode"];
 
@@ -77,7 +77,7 @@ namespace TaskTimer
                 DisplayTitle = "Task 1B",
                 Instructions = "Find a brief description of the Pattern “Artifact-Location Proximity”. " +
                 "When you have the description highlighted, press the complete task button.",
-                TaskURL = Program.VGTropesURL + "?participantid=*"
+                TaskURL = Program.GDPVisURL + "?participantid=*"
             },
             new StudyTask()
             {
@@ -86,7 +86,7 @@ namespace TaskTimer
                 Instructions = "Find the pattern that meets the following description " +
                 "“Being in control over who can move within an area in the game world or having access to actions linked to locations in the game world.” " +
                 "When you have found this pattern's page and are viewing it, press the complete task button.",
-               TaskURL = Program.VGTropesURL + "?participantid=*"
+               TaskURL = Program.GDPVisURL + "?participantid=*"
             },
             new StudyTask()
             {
@@ -95,7 +95,7 @@ namespace TaskTimer
                 Instructions = "Find 5 patterns from the category “Interface Patterns”. " +
                 "Write, or copy and paste the patterns you find into the Task Answer Box below. " +
                 "When you have 5 patterns in the box, press the task complete button.",
-                TaskURL = Program.VGTropesURL + "?participantid=*"
+                TaskURL = Program.GDPVisURL + "?participantid=*"
             },
             new StudyTask()
             {
@@ -105,13 +105,13 @@ namespace TaskTimer
                 "Don’t include categories in your response. " +
                 "Write, or copy and paste the games you find into the Task Answer Box below. " +
                 "When you have 5 games in the box, press the task complete button.",
-                TaskURL = Program.VGTropesURL + "?participantid=*"
+                TaskURL = Program.GDPVisURL + "?participantid=*"
             },
             new StudyTask()
             {
-                Title = "Post-VGTropes Use Questionnaire",
+                Title = "Post-GDPVis Use Questionnaire",
                 DisplayTitle = "Task 5B",
-                Instructions = "Fill in the following questionnaire. For the question 'Which of the systems did you just use?', select 'VGTropes'.",
+                Instructions = "Fill in the following questionnaire. For the question 'Which of the systems did you just use?', select 'GDPVis'.",
                 TaskURL = "https://unioflincoln.eu.qualtrics.com/jfe/form/SV_aUXwBVYTaC0wklL",
                 ShouldShowFailedQuestion = false
             }
