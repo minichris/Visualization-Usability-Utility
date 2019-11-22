@@ -4,3 +4,5 @@ obj/
 packages/
 TaskTimerServer/node_modules/
 TaskTimerServer/db.json
+TaskTimerServer/tempUserData.json
+TaskTimerServer/userData/

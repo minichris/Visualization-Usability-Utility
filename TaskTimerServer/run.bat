@@ -1,1 +1,1 @@
-node index.js
+node index.js --inspect=localhost:9001

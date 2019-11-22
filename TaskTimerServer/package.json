@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "json-server": "^0.15.0"
+    "glob": "^7.1.6",
+    "json-merger": "^1.1.1",
+    "json-server": "^0.15.0",
+    "jsonfile": "^5.0.0",
+    "read-data": "^1.1.0"
   }
 }

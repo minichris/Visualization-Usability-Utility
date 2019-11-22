@@ -1,4 +1,916 @@
 {
-  "logs": [],
-  "tasks": []
+  "logs": [
+    {
+      "timestamp": "1573747274",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747274",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 1
+    },
+    {
+      "timestamp": "1573747280",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747280",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 2
+    },
+    {
+      "timestamp": "1573747280",
+      "participant": "7427",
+      "message": "User used search bar to search for Artifact-Location Proximity @ 1573747280",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 3
+    },
+    {
+      "timestamp": "1573747315",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747315",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 4
+    },
+    {
+      "timestamp": "1573747330",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747330",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 5
+    },
+    {
+      "timestamp": "1573747330",
+      "participant": "7427",
+      "message": "User used search bar to search for Artifact-Location Proximity @ 1573747330",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 6
+    },
+    {
+      "timestamp": "1573747348",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747348",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 7
+    },
+    {
+      "timestamp": "1573747348",
+      "participant": "7427",
+      "message": "User used search bar to search for Location-Fixed Abilities @ 1573747348",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 8
+    },
+    {
+      "timestamp": "1573747370",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747370",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 9
+    },
+    {
+      "timestamp": "1573747373",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747373",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 10
+    },
+    {
+      "timestamp": "1573747373",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747373",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 11
+    },
+    {
+      "timestamp": "1573747380",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747380",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 12
+    },
+    {
+      "timestamp": "1573747380",
+      "participant": "7427",
+      "message": "User used search bar to search for Abilities @ 1573747380",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 13
+    },
+    {
+      "timestamp": "1573747390",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747390",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 14
+    },
+    {
+      "timestamp": "1573747412",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747412",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 15
+    },
+    {
+      "timestamp": "1573747417",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747417",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 16
+    },
+    {
+      "timestamp": "1573747417",
+      "participant": "7427",
+      "message": "User used search bar to search for Interface Patterns @ 1573747417",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 17
+    },
+    {
+      "timestamp": "1573747428",
+      "participant": "7427",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1573747428",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 18
+    },
+    {
+      "timestamp": "1573747429",
+      "participant": "7427",
+      "message": "User manually opened filter panel @ 1573747429",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 19
+    },
+    {
+      "timestamp": "1573747429",
+      "participant": "7427",
+      "message": "Filter panel opened (possibly automatic) @ 1573747429",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 20
+    },
+    {
+      "timestamp": "1573747437",
+      "participant": "7427",
+      "message": "User manually closed filter panel @ 1573747437",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 21
+    },
+    {
+      "timestamp": "1573747437",
+      "participant": "7427",
+      "message": "Filter panel closed (possibly automatic) @ 1573747437",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 22
+    },
+    {
+      "timestamp": "1573747439",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747439",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 23
+    },
+    {
+      "timestamp": "1573747439",
+      "participant": "7427",
+      "message": "User manually opened document viewer panel @ 1573747439",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 24
+    },
+    {
+      "timestamp": "1573747483",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747483",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 25
+    },
+    {
+      "timestamp": "1573747487",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747487",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 26
+    },
+    {
+      "timestamp": "1573747487",
+      "participant": "7427",
+      "message": "User used search bar to search for Critical Hits @ 1573747487",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 27
+    },
+    {
+      "timestamp": "1573747489",
+      "participant": "7427",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1573747489",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 28
+    },
+    {
+      "timestamp": "1573747495",
+      "participant": "7427",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1573747495",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 29
+    },
+    {
+      "timestamp": "1574426560",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574426560",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 30
+    },
+    {
+      "timestamp": "1574426643",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426643",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 31
+    },
+    {
+      "timestamp": "1574426649",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574426649",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 32
+    },
+    {
+      "timestamp": "1574426649",
+      "participant": "7423",
+      "message": "User manually opened document viewer panel @ 1574426649",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 33
+    },
+    {
+      "timestamp": "1574426691",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426691",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 34
+    },
+    {
+      "timestamp": "1574426694",
+      "participant": "7423",
+      "message": "User manually opened filter panel @ 1574426694",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 35
+    },
+    {
+      "timestamp": "1574426694",
+      "participant": "7423",
+      "message": "Filter panel opened (possibly automatic) @ 1574426694",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 36
+    },
+    {
+      "timestamp": "1574426798",
+      "participant": "7423",
+      "message": "User manually closed filter panel @ 1574426798",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 37
+    },
+    {
+      "timestamp": "1574426798",
+      "participant": "7423",
+      "message": "Filter panel closed (possibly automatic) @ 1574426798",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 38
+    },
+    {
+      "timestamp": "1574426802",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574426802",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 39
+    },
+    {
+      "timestamp": "1574426802",
+      "participant": "7423",
+      "message": "User manually opened document viewer panel @ 1574426802",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 40
+    },
+    {
+      "timestamp": "1574426804",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426804",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 41
+    },
+    {
+      "timestamp": "1574426815",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574426815",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 42
+    },
+    {
+      "timestamp": "1574426824",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426824",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 43
+    },
+    {
+      "timestamp": "1574426845",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426845",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 44
+    },
+    {
+      "timestamp": "1574426846",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426846",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 45
+    },
+    {
+      "timestamp": "1574426846",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426846",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 46
+    },
+    {
+      "timestamp": "1574426846",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426846",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 47
+    },
+    {
+      "timestamp": "1574426846",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426846",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 48
+    },
+    {
+      "timestamp": "1574426850",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574426850",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 49
+    },
+    {
+      "timestamp": "1574426850",
+      "participant": "7423",
+      "message": "User used search bar to search for Artifact-Location Proximity @ 1574426850",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 50
+    },
+    {
+      "timestamp": "1574426921",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574426921",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 51
+    },
+    {
+      "timestamp": "1574426945",
+      "participant": "7423",
+      "message": "User used search bar to search for GenericSearch:being in control @ 1574426945",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 52
+    },
+    {
+      "timestamp": "1574426953",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574426953",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 53
+    },
+    {
+      "timestamp": "1574426963",
+      "participant": "7423",
+      "message": "User used search bar to search for GenericSearch:control @ 1574426963",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 54
+    },
+    {
+      "timestamp": "1574426983",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574426983",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 55
+    },
+    {
+      "timestamp": "1574426983",
+      "participant": "7423",
+      "message": "User used search bar to search for Area Control @ 1574426983",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 56
+    },
+    {
+      "timestamp": "1574427044",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574427044",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 57
+    },
+    {
+      "timestamp": "1574427053",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427053",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 58
+    },
+    {
+      "timestamp": "1574427055",
+      "participant": "7423",
+      "message": "User manually opened filter panel @ 1574427055",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 59
+    },
+    {
+      "timestamp": "1574427055",
+      "participant": "7423",
+      "message": "Filter panel opened (possibly automatic) @ 1574427055",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 60
+    },
+    {
+      "timestamp": "1574427064",
+      "participant": "7423",
+      "message": "User manually closed filter panel @ 1574427064",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 61
+    },
+    {
+      "timestamp": "1574427064",
+      "participant": "7423",
+      "message": "Filter panel closed (possibly automatic) @ 1574427064",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 62
+    },
+    {
+      "timestamp": "1574427068",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574427068",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 63
+    },
+    {
+      "timestamp": "1574427070",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427070",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 64
+    },
+    {
+      "timestamp": "1574427070",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427070",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 65
+    },
+    {
+      "timestamp": "1574427072",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574427072",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 66
+    },
+    {
+      "timestamp": "1574427078",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427078",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 67
+    },
+    {
+      "timestamp": "1574427078",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427078",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 68
+    },
+    {
+      "timestamp": "1574427080",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427080",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 69
+    },
+    {
+      "timestamp": "1574427080",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427080",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 70
+    },
+    {
+      "timestamp": "1574427098",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427098",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 71
+    },
+    {
+      "timestamp": "1574427098",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427098",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 72
+    },
+    {
+      "timestamp": "1574427109",
+      "participant": "7423",
+      "message": "User used search bar to search for GenericSearch:interface @ 1574427109",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 73
+    },
+    {
+      "timestamp": "1574427113",
+      "participant": "7423",
+      "message": "User manually opened filter panel @ 1574427113",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 74
+    },
+    {
+      "timestamp": "1574427113",
+      "participant": "7423",
+      "message": "Filter panel opened (possibly automatic) @ 1574427113",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 75
+    },
+    {
+      "timestamp": "1574427130",
+      "participant": "7423",
+      "message": "User manually closed filter panel @ 1574427130",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 76
+    },
+    {
+      "timestamp": "1574427130",
+      "participant": "7423",
+      "message": "Filter panel closed (possibly automatic) @ 1574427130",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 77
+    },
+    {
+      "timestamp": "1574427137",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574427137",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 78
+    },
+    {
+      "timestamp": "1574427137",
+      "participant": "7423",
+      "message": "User used search bar to search for HUD Interfaces @ 1574427137",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 79
+    },
+    {
+      "timestamp": "1574427156",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574427156",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 80
+    },
+    {
+      "timestamp": "1574427156",
+      "participant": "7423",
+      "message": "User used search bar to search for Mimetic Interfaces @ 1574427156",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 81
+    },
+    {
+      "timestamp": "1574427164",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427164",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 82
+    },
+    {
+      "timestamp": "1574427164",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427164",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 83
+    },
+    {
+      "timestamp": "1574427164",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427164",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 84
+    },
+    {
+      "timestamp": "1574427164",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427164",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 85
+    },
+    {
+      "timestamp": "1574427170",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574427170",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 86
+    },
+    {
+      "timestamp": "1574427170",
+      "participant": "7423",
+      "message": "User used search bar to search for Secondary Interface Screens @ 1574427170",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 87
+    },
+    {
+      "timestamp": "1574427178",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427178",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 88
+    },
+    {
+      "timestamp": "1574427178",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427178",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 89
+    },
+    {
+      "timestamp": "1574427178",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427178",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 90
+    },
+    {
+      "timestamp": "1574427178",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427178",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 91
+    },
+    {
+      "timestamp": "1574427178",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427178",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 92
+    },
+    {
+      "timestamp": "1574427180",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427180",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 93
+    },
+    {
+      "timestamp": "1574427180",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427180",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 94
+    },
+    {
+      "timestamp": "1574427180",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427180",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 95
+    },
+    {
+      "timestamp": "1574427180",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427180",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 96
+    },
+    {
+      "timestamp": "1574427180",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427180",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 97
+    },
+    {
+      "timestamp": "1574427183",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574427183",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 98
+    },
+    {
+      "timestamp": "1574427183",
+      "participant": "7423",
+      "message": "User used search bar to search for Interface Patterns @ 1574427183",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 99
+    },
+    {
+      "timestamp": "1574427242",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574427242",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 100
+    },
+    {
+      "timestamp": "1574427259",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427259",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 101
+    },
+    {
+      "timestamp": "1574427260",
+      "participant": "7423",
+      "message": "User manually opened filter panel @ 1574427260",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 102
+    },
+    {
+      "timestamp": "1574427260",
+      "participant": "7423",
+      "message": "Filter panel opened (possibly automatic) @ 1574427260",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 103
+    },
+    {
+      "timestamp": "1574427302",
+      "participant": "7423",
+      "message": "User used search bar to search for Critical Hits @ 1574427302",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 104
+    },
+    {
+      "timestamp": "1574427302",
+      "participant": "7423",
+      "message": "Document viewer panel was opened (possibly automatic) @ 1574427302",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 105
+    },
+    {
+      "timestamp": "1574427310",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427310",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 106
+    },
+    {
+      "timestamp": "1574427374",
+      "participant": "7423",
+      "message": "User manually closed filter panel @ 1574427374",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 107
+    },
+    {
+      "timestamp": "1574427374",
+      "participant": "7423",
+      "message": "Filter panel closed (possibly automatic) @ 1574427374",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 108
+    },
+    {
+      "timestamp": "1574427375",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427375",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 109
+    },
+    {
+      "timestamp": "1574427375",
+      "participant": "7423",
+      "message": "Document viewer panel was closed (possibly automatic) @ 1574427375",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 110
+    },
+    {
+      "timestamp": "1574427375",
+      "participant": "7423",
+      "message": "User manually opened filter panel @ 1574427375",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 111
+    },
+    {
+      "timestamp": "1574427375",
+      "participant": "7423",
+      "message": "Filter panel opened (possibly automatic) @ 1574427375",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 112
+    },
+    {
+      "timestamp": "1574427403",
+      "participant": "7423",
+      "message": "User manually closed filter panel @ 1574427403",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 113
+    },
+    {
+      "timestamp": "1574427403",
+      "participant": "7423",
+      "message": "Filter panel closed (possibly automatic) @ 1574427403",
+      "level[value]": "3",
+      "level[name]": "INFO",
+      "id": 114
+    }
+  ]
 }
